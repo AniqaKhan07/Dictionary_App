@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LexiPro Dictionary</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LexiPro Dictionary</h1>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Enter a word...">
+                <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="result">
+                <div class="word">
+                    <h2 id="word-title">Word</h2>
+                    <button id="speaker-btn"><i class="fas fa-volume-up"></i></button>
+                </div>
+                <div class="details">
+                    <span id="part-of-speech">Part of Speech</span>
+                    <span id="phonetic">Phonetic</span>
+                </div>
+
+                <div class="meaning-section">
+                    <h3>English Meaning</h3>
+                    <p id="definition">Definition will appear here...</p>
+                    <h4>Example</h4>
+                    <p id="example">Example will appear here...</p>
+                </div>
+
+            <div class="error-message">
+                <p>Sorry, word not found. Please try another word.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
